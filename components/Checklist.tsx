@@ -5,6 +5,7 @@ import {
   computeBundleProgress,
   computeOverallProgress,
   computeRoomProgress,
+  type CheckedItems,
 } from "@/lib/progress";
 import {
   emptyFilter,
@@ -12,17 +13,22 @@ import {
   isAvailableNow,
   type ItemFilter,
 } from "@/lib/filters";
-import { useCheckedItems } from "@/lib/useCheckedItems";
+import { useBoard } from "@/lib/useBoard";
+import { useDisplayName } from "@/lib/useDisplayName";
 import { itemTags } from "@/lib/tags";
+import type { BoardState } from "@/lib/board";
 import { SEASONS, type Bundle, type BundleItem, type Room, type Season, type Source } from "@/lib/schema";
 
 export function Checklist({ rooms }: { rooms: Room[] }) {
-  const { checked, toggle, hydrated } = useCheckedItems();
+  const { checked, attribution, toggle, ready } = useBoard(rooms);
+  const { name, setName, hydrated: nameReady } = useDisplayName();
   const [filter, setFilter] = useState<ItemFilter>(emptyFilter);
   const [availNow, setAvailNow] = useState(false);
   const [curSeason, setCurSeason] = useState<Season>("spring");
   const [raining, setRaining] = useState(false);
 
+  const hasName = name.trim() !== "";
+  const interactive = ready && hasName;
   const isCompleted = (item: BundleItem) => Boolean(checked[item.id]);
   const sources = useMemo(() => collectSources(rooms), [rooms]);
   const overall = computeOverallProgress(rooms, checked);
@@ -35,6 +41,8 @@ export function Checklist({ rooms }: { rooms: Room[] }) {
 
   return (
     <div>
+      <NameBar name={name} setName={setName} ready={nameReady} />
+
       <div className="overall">
         <ProgressBar
           label="Community Center"
@@ -152,8 +160,9 @@ export function Checklist({ rooms }: { rooms: Room[] }) {
                     bundle={bundle}
                     items={items}
                     checked={checked}
-                    onToggle={toggle}
-                    interactive={hydrated}
+                    attribution={attribution}
+                    onToggle={(item) => toggle(item, name)}
+                    interactive={interactive}
                     availNow={availNow}
                     curSeason={curSeason}
                     raining={raining}
@@ -201,6 +210,7 @@ function BundleCard({
   bundle,
   items,
   checked,
+  attribution,
   onToggle,
   interactive,
   availNow,
@@ -209,8 +219,9 @@ function BundleCard({
 }: {
   bundle: Bundle;
   items: BundleItem[];
-  checked: ReturnType<typeof useCheckedItems>["checked"];
-  onToggle: ReturnType<typeof useCheckedItems>["toggle"];
+  checked: CheckedItems;
+  attribution: BoardState;
+  onToggle: (item: BundleItem) => void;
   interactive: boolean;
   availNow: boolean;
   curSeason: Season;
@@ -254,6 +265,9 @@ function BundleCard({
               </label>
               {item.quantity > 1 && <span className="item__qty">×{item.quantity}</span>}
               {item.quality !== "any" && <span className="item__quality">{item.quality}</span>}
+              {isChecked && attribution[item.id]?.checkedBy && (
+                <span className="item__by">{attribution[item.id].checkedBy}</span>
+              )}
             </li>
           );
         })}
@@ -309,6 +323,87 @@ function ItemInfo({ item }: { item: BundleItem }) {
         </div>
       )}
     </div>
+  );
+}
+
+function NameBar({
+  name,
+  setName,
+  ready,
+}: {
+  name: string;
+  setName: (n: string) => void;
+  ready: boolean;
+}) {
+  const [draft, setDraft] = useState("");
+  const [editing, setEditing] = useState(false);
+  const hasName = name.trim() !== "";
+
+  if (!ready) return <div className="namebar namebar--muted">Loading board…</div>;
+
+  if (!hasName || editing) {
+    return (
+      <div className="namebar">
+        <label className="namebar__label" htmlFor="displayname">
+          Pick a display name to tick items
+        </label>
+        <div className="namebar__row">
+          <input
+            id="displayname"
+            className="control control--search"
+            value={draft}
+            autoFocus
+            onChange={(e) => setDraft(e.target.value)}
+            placeholder="Your name…"
+          />
+          <button
+            className="btn"
+            type="button"
+            disabled={draft.trim() === ""}
+            onClick={() => {
+              setName(draft);
+              setEditing(false);
+            }}
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="namebar">
+      <span className="namebar__who">
+        Ticking as <strong>{name}</strong>
+      </span>
+      <button
+        className="btn btn--ghost"
+        type="button"
+        onClick={() => {
+          setDraft(name);
+          setEditing(true);
+        }}
+      >
+        Change
+      </button>
+      <ResetButton />
+    </div>
+  );
+}
+
+function ResetButton() {
+  const [busy, setBusy] = useState(false);
+  async function reset() {
+    if (!window.confirm("Reset the whole board? This clears every tick for everyone.")) return;
+    setBusy(true);
+    await fetch("/api/reset", { method: "POST" }).catch(() => null);
+    setBusy(false);
+  }
+  return (
+    <button className="btn btn--danger" type="button" onClick={reset} disabled={busy}>
+      {busy ? "Resetting…" : "Reset board"}
+    </button>
   );
 }
 

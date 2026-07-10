@@ -260,6 +260,92 @@ h2,
   opacity: 0.35;
 }
 
+/* Buttons */
+.btn {
+  font: inherit;
+  padding: 6px 14px;
+  border: 2px solid var(--wood-seam);
+  border-radius: 6px;
+  background: var(--junimo);
+  color: var(--parchment);
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--ghost {
+  background: var(--parchment);
+  color: var(--ink);
+  border-color: #a9824e;
+}
+
+.btn--danger {
+  background: #b6472f;
+}
+
+/* Passphrase gate */
+.gate {
+  background: var(--parchment);
+  border: 3px solid #a9824e;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 420px;
+}
+
+.gate__label {
+  display: block;
+  font-family: var(--display);
+  margin-bottom: 10px;
+}
+
+.gate__row,
+.namebar__row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.gate__error {
+  color: #b6472f;
+  margin: 10px 0 0;
+}
+
+/* Name bar */
+.namebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  color: var(--parchment);
+}
+
+.namebar--muted {
+  opacity: 0.7;
+}
+
+.namebar__label {
+  font-family: var(--display);
+}
+
+.namebar__who {
+  margin-right: auto;
+}
+
+.item__by {
+  font-size: 0.78em;
+  color: var(--complete);
+  font-style: italic;
+  white-space: nowrap;
+}
+
 /* Controls */
 .controls {
   display: flex;
