@@ -15,3 +15,16 @@ alter table public.checks enable row level security;
 create policy "public read checks" on public.checks for select using (true);
 
 alter publication supabase_realtime add table public.checks;
+
+-- "Gifted this week" tracker: one row per (villager, giver) on a board. A player
+-- toggles their own mark per villager; "New week" clears the whole board's gifts.
+create table if not exists public.gifts (
+  board_id    text not null default 'main',
+  villager_id text not null,
+  given_by    text not null,
+  given_at    timestamptz not null default now(),
+  primary key (board_id, villager_id, given_by)
+);
+alter table public.gifts enable row level security;
+create policy "public read gifts" on public.gifts for select using (true);
+alter publication supabase_realtime add table public.gifts;

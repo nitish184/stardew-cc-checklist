@@ -448,3 +448,139 @@ h2,
 .room__head .progress {
   flex: 1 1 auto;
 }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  font-family: var(--display);
+  font-size: 1.05rem;
+  padding: 8px 18px;
+  border: 3px solid var(--wood-seam);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background: rgba(0, 0, 0, 0.22);
+  color: var(--parchment);
+  cursor: pointer;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tab--active {
+  background: var(--junimo);
+}
+
+.panel-note {
+  color: #e7d3a6;
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+
+/* Gifts panel */
+.villagers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.villager {
+  flex: 1 1 300px;
+  background: var(--parchment);
+  border: 3px solid #a9824e;
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow:
+    inset 0 0 0 2px var(--parchment),
+    inset 0 0 0 3px rgba(0, 0, 0, 0.12),
+    0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.villager--gifted {
+  border-color: var(--complete);
+}
+
+.villager__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.villager__portrait {
+  image-rendering: pixelated;
+  border: 2px solid var(--wood);
+  border-radius: 4px;
+  background: #d9bd8a;
+  flex: 0 0 auto;
+}
+
+.villager__name {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  flex: 1 1 auto;
+}
+
+.villager__toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.villager__givers {
+  margin: 0 0 8px;
+  color: var(--complete);
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.giftlist {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.giftlist__label {
+  flex: 0 0 44px;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding-top: 3px;
+}
+
+.giftlist--loved .giftlist__label {
+  color: #b6472f;
+}
+.giftlist--liked .giftlist__label {
+  color: #5a8f3c;
+}
+
+.gift-chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.gift-chip {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.82em;
+  background: #e0cfa6;
+  border: 1px solid #b79a63;
+  border-radius: 4px;
+  padding: 0 5px 0 3px;
+}
+
+.gift-chip__sprite {
+  image-rendering: pixelated;
+  flex: 0 0 auto;
+}

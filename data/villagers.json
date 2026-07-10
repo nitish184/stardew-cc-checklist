@@ -1,0 +1,2105 @@
+{
+  "version": 1,
+  "game": "1.6",
+  "villagers": [
+    {
+      "id": "abigail",
+      "name": "Abigail",
+      "portrait": "/portraits/abigail.png",
+      "loved": [
+        {
+          "id": "amethyst",
+          "name": "Amethyst",
+          "sprite": "/sprites/amethyst.png"
+        },
+        {
+          "id": "banana-pudding",
+          "name": "Banana Pudding",
+          "sprite": "/sprites/banana-pudding.png"
+        },
+        {
+          "id": "blackberry-cobbler",
+          "name": "Blackberry Cobbler",
+          "sprite": "/sprites/blackberry-cobbler.png"
+        },
+        {
+          "id": "chocolate-cake",
+          "name": "Chocolate Cake",
+          "sprite": "/sprites/chocolate-cake.png"
+        },
+        {
+          "id": "monster-compendium",
+          "name": "Monster Compendium",
+          "sprite": "/sprites/monster-compendium.png"
+        },
+        {
+          "id": "pufferfish",
+          "name": "Pufferfish",
+          "sprite": "/sprites/pufferfish.png"
+        },
+        {
+          "id": "pumpkin",
+          "name": "Pumpkin",
+          "sprite": "/sprites/pumpkin.png"
+        },
+        {
+          "id": "spicy-eel",
+          "name": "Spicy Eel",
+          "sprite": "/sprites/spicy-eel.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "ancient-sword",
+          "name": "Ancient Sword",
+          "sprite": "/sprites/ancient-sword.png"
+        },
+        {
+          "id": "basilisk-paw",
+          "name": "Basilisk Paw",
+          "sprite": "/sprites/basilisk-paw.png"
+        },
+        {
+          "id": "bone-flute",
+          "name": "Bone Flute",
+          "sprite": "/sprites/bone-flute.png"
+        },
+        {
+          "id": "combat-quarterly",
+          "name": "Combat Quarterly",
+          "sprite": "/sprites/combat-quarterly.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        }
+      ]
+    },
+    {
+      "id": "alex",
+      "name": "Alex",
+      "portrait": "/portraits/alex.png",
+      "loved": [
+        {
+          "id": "complete-breakfast",
+          "name": "Complete Breakfast",
+          "sprite": "/sprites/complete-breakfast.png"
+        },
+        {
+          "id": "jack-be-nimble-jack-be-thick",
+          "name": "Jack Be Nimble, Jack Be Thick",
+          "sprite": "/sprites/jack-be-nimble-jack-be-thick.png"
+        },
+        {
+          "id": "salmon-dinner",
+          "name": "Salmon Dinner",
+          "sprite": "/sprites/salmon-dinner.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "dinosaur-egg",
+          "name": "Dinosaur Egg",
+          "sprite": "/sprites/dinosaur-egg.png"
+        },
+        {
+          "id": "field-snack",
+          "name": "Field Snack",
+          "sprite": "/sprites/field-snack.png"
+        },
+        {
+          "id": "parrot-egg",
+          "name": "Parrot Egg",
+          "sprite": "/sprites/parrot-egg.png"
+        }
+      ]
+    },
+    {
+      "id": "caroline",
+      "name": "Caroline",
+      "portrait": "/portraits/caroline.png",
+      "loved": [
+        {
+          "id": "fish-taco",
+          "name": "Fish Taco",
+          "sprite": "/sprites/fish-taco.png"
+        },
+        {
+          "id": "green-tea",
+          "name": "Green Tea",
+          "sprite": "/sprites/green-tea.png"
+        },
+        {
+          "id": "summer-spangle",
+          "name": "Summer Spangle",
+          "sprite": "/sprites/summer-spangle.png"
+        },
+        {
+          "id": "tropical-curry",
+          "name": "Tropical Curry",
+          "sprite": "/sprites/tropical-curry.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "tea-leaves",
+          "name": "Tea Leaves",
+          "sprite": "/sprites/tea-leaves.png"
+        },
+        {
+          "id": "wild-horseradish",
+          "name": "Wild Horseradish",
+          "sprite": "/sprites/wild-horseradish.png"
+        }
+      ]
+    },
+    {
+      "id": "clint",
+      "name": "Clint",
+      "portrait": "/portraits/clint.png",
+      "loved": [
+        {
+          "id": "amethyst",
+          "name": "Amethyst",
+          "sprite": "/sprites/amethyst.png"
+        },
+        {
+          "id": "aquamarine",
+          "name": "Aquamarine",
+          "sprite": "/sprites/aquamarine.png"
+        },
+        {
+          "id": "artichoke-dip",
+          "name": "Artichoke Dip",
+          "sprite": "/sprites/artichoke-dip.png"
+        },
+        {
+          "id": "emerald",
+          "name": "Emerald",
+          "sprite": "/sprites/emerald.png"
+        },
+        {
+          "id": "fiddlehead-risotto",
+          "name": "Fiddlehead Risotto",
+          "sprite": "/sprites/fiddlehead-risotto.png"
+        },
+        {
+          "id": "gold-bar",
+          "name": "Gold Bar",
+          "sprite": "/sprites/gold-bar.png"
+        },
+        {
+          "id": "iridium-bar",
+          "name": "Iridium Bar",
+          "sprite": "/sprites/iridium-bar.png"
+        },
+        {
+          "id": "jade",
+          "name": "Jade",
+          "sprite": "/sprites/jade.png"
+        },
+        {
+          "id": "omni-geode",
+          "name": "Omni Geode",
+          "sprite": "/sprites/omni-geode.png"
+        },
+        {
+          "id": "ruby",
+          "name": "Ruby",
+          "sprite": "/sprites/ruby.png"
+        },
+        {
+          "id": "topaz",
+          "name": "Topaz",
+          "sprite": "/sprites/topaz.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "copper-bar",
+          "name": "Copper Bar",
+          "sprite": "/sprites/copper-bar.png"
+        },
+        {
+          "id": "iron-bar",
+          "name": "Iron Bar",
+          "sprite": "/sprites/iron-bar.png"
+        },
+        {
+          "id": "mining-monthly",
+          "name": "Mining Monthly",
+          "sprite": "/sprites/mining-monthly.png"
+        }
+      ]
+    },
+    {
+      "id": "demetrius",
+      "name": "Demetrius",
+      "portrait": "/portraits/demetrius.png",
+      "loved": [
+        {
+          "id": "bean-hotpot",
+          "name": "Bean Hotpot",
+          "sprite": "/sprites/bean-hotpot.png"
+        },
+        {
+          "id": "ice-cream",
+          "name": "Ice Cream",
+          "sprite": "/sprites/ice-cream.png"
+        },
+        {
+          "id": "rice-pudding",
+          "name": "Rice Pudding",
+          "sprite": "/sprites/rice-pudding.png"
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry",
+          "sprite": "/sprites/strawberry.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "dinosaur-egg",
+          "name": "Dinosaur Egg",
+          "sprite": "/sprites/dinosaur-egg.png"
+        },
+        {
+          "id": "purple-mushroom",
+          "name": "Purple Mushroom",
+          "sprite": "/sprites/purple-mushroom.png"
+        }
+      ]
+    },
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "portrait": "/portraits/dwarf.png",
+      "loved": [
+        {
+          "id": "amethyst",
+          "name": "Amethyst",
+          "sprite": "/sprites/amethyst.png"
+        },
+        {
+          "id": "aquamarine",
+          "name": "Aquamarine",
+          "sprite": "/sprites/aquamarine.png"
+        },
+        {
+          "id": "emerald",
+          "name": "Emerald",
+          "sprite": "/sprites/emerald.png"
+        },
+        {
+          "id": "jade",
+          "name": "Jade",
+          "sprite": "/sprites/jade.png"
+        },
+        {
+          "id": "lava-eel",
+          "name": "Lava Eel",
+          "sprite": "/sprites/lava-eel.png"
+        },
+        {
+          "id": "lemon-stone",
+          "name": "Lemon Stone",
+          "sprite": "/sprites/lemon-stone.png"
+        },
+        {
+          "id": "omni-geode",
+          "name": "Omni Geode",
+          "sprite": "/sprites/omni-geode.png"
+        },
+        {
+          "id": "ruby",
+          "name": "Ruby",
+          "sprite": "/sprites/ruby.png"
+        },
+        {
+          "id": "topaz",
+          "name": "Topaz",
+          "sprite": "/sprites/topaz.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "cave-carrot",
+          "name": "Cave Carrot",
+          "sprite": "/sprites/cave-carrot.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        }
+      ]
+    },
+    {
+      "id": "elliott",
+      "name": "Elliott",
+      "portrait": "/portraits/elliott.png",
+      "loved": [
+        {
+          "id": "crab-cakes",
+          "name": "Crab Cakes",
+          "sprite": "/sprites/crab-cakes.png"
+        },
+        {
+          "id": "duck-feather",
+          "name": "Duck Feather",
+          "sprite": "/sprites/duck-feather.png"
+        },
+        {
+          "id": "lobster",
+          "name": "Lobster",
+          "sprite": "/sprites/lobster.png"
+        },
+        {
+          "id": "pomegranate",
+          "name": "Pomegranate",
+          "sprite": "/sprites/pomegranate.png"
+        },
+        {
+          "id": "squid-ink",
+          "name": "Squid Ink",
+          "sprite": "/sprites/squid-ink.png"
+        },
+        {
+          "id": "tom-kha-soup",
+          "name": "Tom Kha Soup",
+          "sprite": "/sprites/tom-kha-soup.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "octopus",
+          "name": "Octopus",
+          "sprite": "/sprites/octopus.png"
+        },
+        {
+          "id": "squid",
+          "name": "Squid",
+          "sprite": "/sprites/squid.png"
+        }
+      ]
+    },
+    {
+      "id": "emily",
+      "name": "Emily",
+      "portrait": "/portraits/emily.png",
+      "loved": [
+        {
+          "id": "amethyst",
+          "name": "Amethyst",
+          "sprite": "/sprites/amethyst.png"
+        },
+        {
+          "id": "aquamarine",
+          "name": "Aquamarine",
+          "sprite": "/sprites/aquamarine.png"
+        },
+        {
+          "id": "cloth",
+          "name": "Cloth",
+          "sprite": "/sprites/cloth.png"
+        },
+        {
+          "id": "emerald",
+          "name": "Emerald",
+          "sprite": "/sprites/emerald.png"
+        },
+        {
+          "id": "jade",
+          "name": "Jade",
+          "sprite": "/sprites/jade.png"
+        },
+        {
+          "id": "parrot-egg",
+          "name": "Parrot Egg",
+          "sprite": "/sprites/parrot-egg.png"
+        },
+        {
+          "id": "ruby",
+          "name": "Ruby",
+          "sprite": "/sprites/ruby.png"
+        },
+        {
+          "id": "survival-burger",
+          "name": "Survival Burger",
+          "sprite": "/sprites/survival-burger.png"
+        },
+        {
+          "id": "topaz",
+          "name": "Topaz",
+          "sprite": "/sprites/topaz.png"
+        },
+        {
+          "id": "wool",
+          "name": "Wool",
+          "sprite": "/sprites/wool.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        }
+      ]
+    },
+    {
+      "id": "evelyn",
+      "name": "Evelyn",
+      "portrait": "/portraits/evelyn.png",
+      "loved": [
+        {
+          "id": "beet",
+          "name": "Beet",
+          "sprite": "/sprites/beet.png"
+        },
+        {
+          "id": "chocolate-cake",
+          "name": "Chocolate Cake",
+          "sprite": "/sprites/chocolate-cake.png"
+        },
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "fairy-rose",
+          "name": "Fairy Rose",
+          "sprite": "/sprites/fairy-rose.png"
+        },
+        {
+          "id": "raisins",
+          "name": "Raisins",
+          "sprite": "/sprites/raisins.png"
+        },
+        {
+          "id": "stuffing",
+          "name": "Stuffing",
+          "sprite": "/sprites/stuffing.png"
+        },
+        {
+          "id": "tulip",
+          "name": "Tulip",
+          "sprite": "/sprites/tulip.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "broken-glasses",
+          "name": "Broken Glasses",
+          "sprite": "/sprites/broken-glasses.png"
+        },
+        {
+          "id": "clam",
+          "name": "Clam",
+          "sprite": "/sprites/clam.png"
+        },
+        {
+          "id": "cockle",
+          "name": "Cockle",
+          "sprite": "/sprites/cockle.png"
+        },
+        {
+          "id": "coral",
+          "name": "Coral",
+          "sprite": "/sprites/coral.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "mussel",
+          "name": "Mussel",
+          "sprite": "/sprites/mussel.png"
+        },
+        {
+          "id": "nautilus-shell",
+          "name": "Nautilus Shell",
+          "sprite": "/sprites/nautilus-shell.png"
+        },
+        {
+          "id": "oyster",
+          "name": "Oyster",
+          "sprite": "/sprites/oyster.png"
+        },
+        {
+          "id": "sea-urchin",
+          "name": "Sea Urchin",
+          "sprite": "/sprites/sea-urchin.png"
+        }
+      ]
+    },
+    {
+      "id": "george",
+      "name": "George",
+      "portrait": "/portraits/george.png",
+      "loved": [
+        {
+          "id": "fried-mushroom",
+          "name": "Fried Mushroom",
+          "sprite": "/sprites/fried-mushroom.png"
+        },
+        {
+          "id": "leek",
+          "name": "Leek",
+          "sprite": "/sprites/leek.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        }
+      ]
+    },
+    {
+      "id": "gus",
+      "name": "Gus",
+      "portrait": "/portraits/gus.png",
+      "loved": [
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "escargot",
+          "name": "Escargot",
+          "sprite": "/sprites/escargot.png"
+        },
+        {
+          "id": "fish-taco",
+          "name": "Fish Taco",
+          "sprite": "/sprites/fish-taco.png"
+        },
+        {
+          "id": "orange",
+          "name": "Orange",
+          "sprite": "/sprites/orange.png"
+        },
+        {
+          "id": "tropical-curry",
+          "name": "Tropical Curry",
+          "sprite": "/sprites/tropical-curry.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "truffle",
+          "name": "Truffle",
+          "sprite": "/sprites/truffle.png"
+        }
+      ]
+    },
+    {
+      "id": "haley",
+      "name": "Haley",
+      "portrait": "/portraits/haley.png",
+      "loved": [
+        {
+          "id": "coconut",
+          "name": "Coconut",
+          "sprite": "/sprites/coconut.png"
+        },
+        {
+          "id": "fruit-salad",
+          "name": "Fruit Salad",
+          "sprite": "/sprites/fruit-salad.png"
+        },
+        {
+          "id": "pink-cake",
+          "name": "Pink Cake",
+          "sprite": "/sprites/pink-cake.png"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower",
+          "sprite": "/sprites/sunflower.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        }
+      ]
+    },
+    {
+      "id": "harvey",
+      "name": "Harvey",
+      "portrait": "/portraits/harvey.png",
+      "loved": [
+        {
+          "id": "coffee",
+          "name": "Coffee",
+          "sprite": "/sprites/coffee.png"
+        },
+        {
+          "id": "pickles",
+          "name": "Pickles",
+          "sprite": "/sprites/pickles.png"
+        },
+        {
+          "id": "super-meal",
+          "name": "Super Meal",
+          "sprite": "/sprites/super-meal.png"
+        },
+        {
+          "id": "truffle-oil",
+          "name": "Truffle Oil",
+          "sprite": "/sprites/truffle-oil.png"
+        },
+        {
+          "id": "wine",
+          "name": "Wine",
+          "sprite": "/sprites/wine.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "chanterelle",
+          "name": "Chanterelle",
+          "sprite": "/sprites/chanterelle.png"
+        },
+        {
+          "id": "common-mushroom",
+          "name": "Common Mushroom",
+          "sprite": "/sprites/common-mushroom.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "sprite": "/sprites/dandelion.png"
+        },
+        {
+          "id": "duck-egg",
+          "name": "Duck Egg",
+          "sprite": "/sprites/duck-egg.png"
+        },
+        {
+          "id": "duck-feather",
+          "name": "Duck Feather",
+          "sprite": "/sprites/duck-feather.png"
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "sprite": "/sprites/ginger.png"
+        },
+        {
+          "id": "goat-milk",
+          "name": "Goat Milk",
+          "sprite": "/sprites/goat-milk.png"
+        },
+        {
+          "id": "hazelnut",
+          "name": "Hazelnut",
+          "sprite": "/sprites/hazelnut.png"
+        },
+        {
+          "id": "holly",
+          "name": "Holly",
+          "sprite": "/sprites/holly.png"
+        },
+        {
+          "id": "large-goat-milk",
+          "name": "Large Goat Milk",
+          "sprite": "/sprites/large-goat-milk.png"
+        },
+        {
+          "id": "leek",
+          "name": "Leek",
+          "sprite": "/sprites/leek.png"
+        },
+        {
+          "id": "magma-cap",
+          "name": "Magma Cap",
+          "sprite": "/sprites/magma-cap.png"
+        },
+        {
+          "id": "morel",
+          "name": "Morel",
+          "sprite": "/sprites/morel.png"
+        },
+        {
+          "id": "purple-mushroom",
+          "name": "Purple Mushroom",
+          "sprite": "/sprites/purple-mushroom.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "snow-yam",
+          "name": "Snow Yam",
+          "sprite": "/sprites/snow-yam.png"
+        },
+        {
+          "id": "spring-onion",
+          "name": "Spring Onion",
+          "sprite": "/sprites/spring-onion.png"
+        },
+        {
+          "id": "wild-horseradish",
+          "name": "Wild Horseradish",
+          "sprite": "/sprites/wild-horseradish.png"
+        },
+        {
+          "id": "winter-root",
+          "name": "Winter Root",
+          "sprite": "/sprites/winter-root.png"
+        }
+      ]
+    },
+    {
+      "id": "jas",
+      "name": "Jas",
+      "portrait": "/portraits/jas.png",
+      "loved": [
+        {
+          "id": "ancient-doll",
+          "name": "Ancient Doll",
+          "sprite": "/sprites/ancient-doll.png"
+        },
+        {
+          "id": "fairy-box",
+          "name": "Fairy Box",
+          "sprite": "/sprites/fairy-box.png"
+        },
+        {
+          "id": "fairy-rose",
+          "name": "Fairy Rose",
+          "sprite": "/sprites/fairy-rose.png"
+        },
+        {
+          "id": "pink-cake",
+          "name": "Pink Cake",
+          "sprite": "/sprites/pink-cake.png"
+        },
+        {
+          "id": "plum-pudding",
+          "name": "Plum Pudding",
+          "sprite": "/sprites/plum-pudding.png"
+        },
+        {
+          "id": "strange-doll-green",
+          "name": "Strange Doll (green)",
+          "sprite": "/sprites/strange-doll-green.png"
+        },
+        {
+          "id": "strange-doll-yellow",
+          "name": "Strange Doll (yellow)",
+          "sprite": "/sprites/strange-doll-yellow.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "coconut",
+          "name": "Coconut",
+          "sprite": "/sprites/coconut.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        }
+      ]
+    },
+    {
+      "id": "jodi",
+      "name": "Jodi",
+      "portrait": "/portraits/jodi.png",
+      "loved": [
+        {
+          "id": "chocolate-cake",
+          "name": "Chocolate Cake",
+          "sprite": "/sprites/chocolate-cake.png"
+        },
+        {
+          "id": "crispy-bass",
+          "name": "Crispy Bass",
+          "sprite": "/sprites/crispy-bass.png"
+        },
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "eggplant-parmesan",
+          "name": "Eggplant Parmesan",
+          "sprite": "/sprites/eggplant-parmesan.png"
+        },
+        {
+          "id": "fried-eel",
+          "name": "Fried Eel",
+          "sprite": "/sprites/fried-eel.png"
+        },
+        {
+          "id": "pancakes",
+          "name": "Pancakes",
+          "sprite": "/sprites/pancakes.png"
+        },
+        {
+          "id": "rhubarb-pie",
+          "name": "Rhubarb Pie",
+          "sprite": "/sprites/rhubarb-pie.png"
+        },
+        {
+          "id": "vegetable-medley",
+          "name": "Vegetable Medley",
+          "sprite": "/sprites/vegetable-medley.png"
+        }
+      ],
+      "liked": []
+    },
+    {
+      "id": "kent",
+      "name": "Kent",
+      "portrait": "/portraits/kent.png",
+      "loved": [
+        {
+          "id": "fiddlehead-risotto",
+          "name": "Fiddlehead Risotto",
+          "sprite": "/sprites/fiddlehead-risotto.png"
+        },
+        {
+          "id": "roasted-hazelnuts",
+          "name": "Roasted Hazelnuts",
+          "sprite": "/sprites/roasted-hazelnuts.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "dwarvish-safety-manual",
+          "name": "Dwarvish Safety Manual",
+          "sprite": "/sprites/dwarvish-safety-manual.png"
+        }
+      ]
+    },
+    {
+      "id": "krobus",
+      "name": "Krobus",
+      "portrait": "/portraits/krobus.png",
+      "loved": [
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "iridium-bar",
+          "name": "Iridium Bar",
+          "sprite": "/sprites/iridium-bar.png"
+        },
+        {
+          "id": "monster-compendium",
+          "name": "Monster Compendium",
+          "sprite": "/sprites/monster-compendium.png"
+        },
+        {
+          "id": "monster-musk",
+          "name": "Monster Musk",
+          "sprite": "/sprites/monster-musk.png"
+        },
+        {
+          "id": "pumpkin",
+          "name": "Pumpkin",
+          "sprite": "/sprites/pumpkin.png"
+        },
+        {
+          "id": "void-egg",
+          "name": "Void Egg",
+          "sprite": "/sprites/void-egg.png"
+        },
+        {
+          "id": "void-mayonnaise",
+          "name": "Void Mayonnaise",
+          "sprite": "/sprites/void-mayonnaise.png"
+        },
+        {
+          "id": "wild-horseradish",
+          "name": "Wild Horseradish",
+          "sprite": "/sprites/wild-horseradish.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "gold-bar",
+          "name": "Gold Bar",
+          "sprite": "/sprites/gold-bar.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "seafoam-pudding",
+          "name": "Seafoam Pudding",
+          "sprite": "/sprites/seafoam-pudding.png"
+        },
+        {
+          "id": "strange-bun",
+          "name": "Strange Bun",
+          "sprite": "/sprites/strange-bun.png"
+        }
+      ]
+    },
+    {
+      "id": "leah",
+      "name": "Leah",
+      "portrait": "/portraits/leah.png",
+      "loved": [
+        {
+          "id": "goat-cheese",
+          "name": "Goat Cheese",
+          "sprite": "/sprites/goat-cheese.png"
+        },
+        {
+          "id": "poppyseed-muffin",
+          "name": "Poppyseed Muffin",
+          "sprite": "/sprites/poppyseed-muffin.png"
+        },
+        {
+          "id": "salad",
+          "name": "Salad",
+          "sprite": "/sprites/salad.png"
+        },
+        {
+          "id": "stir-fry",
+          "name": "Stir Fry",
+          "sprite": "/sprites/stir-fry.png"
+        },
+        {
+          "id": "truffle",
+          "name": "Truffle",
+          "sprite": "/sprites/truffle.png"
+        },
+        {
+          "id": "vegetable-medley",
+          "name": "Vegetable Medley",
+          "sprite": "/sprites/vegetable-medley.png"
+        },
+        {
+          "id": "wine",
+          "name": "Wine",
+          "sprite": "/sprites/wine.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "chanterelle",
+          "name": "Chanterelle",
+          "sprite": "/sprites/chanterelle.png"
+        },
+        {
+          "id": "common-mushroom",
+          "name": "Common Mushroom",
+          "sprite": "/sprites/common-mushroom.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "sprite": "/sprites/dandelion.png"
+        },
+        {
+          "id": "driftwood",
+          "name": "Driftwood",
+          "sprite": "/sprites/driftwood.png"
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "sprite": "/sprites/ginger.png"
+        },
+        {
+          "id": "hazelnut",
+          "name": "Hazelnut",
+          "sprite": "/sprites/hazelnut.png"
+        },
+        {
+          "id": "holly",
+          "name": "Holly",
+          "sprite": "/sprites/holly.png"
+        },
+        {
+          "id": "leek",
+          "name": "Leek",
+          "sprite": "/sprites/leek.png"
+        },
+        {
+          "id": "magma-cap",
+          "name": "Magma Cap",
+          "sprite": "/sprites/magma-cap.png"
+        },
+        {
+          "id": "morel",
+          "name": "Morel",
+          "sprite": "/sprites/morel.png"
+        },
+        {
+          "id": "purple-mushroom",
+          "name": "Purple Mushroom",
+          "sprite": "/sprites/purple-mushroom.png"
+        },
+        {
+          "id": "snow-yam",
+          "name": "Snow Yam",
+          "sprite": "/sprites/snow-yam.png"
+        },
+        {
+          "id": "spring-onion",
+          "name": "Spring Onion",
+          "sprite": "/sprites/spring-onion.png"
+        },
+        {
+          "id": "wild-horseradish",
+          "name": "Wild Horseradish",
+          "sprite": "/sprites/wild-horseradish.png"
+        },
+        {
+          "id": "winter-root",
+          "name": "Winter Root",
+          "sprite": "/sprites/winter-root.png"
+        }
+      ]
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "portrait": "/portraits/leo.png",
+      "loved": [
+        {
+          "id": "duck-feather",
+          "name": "Duck Feather",
+          "sprite": "/sprites/duck-feather.png"
+        },
+        {
+          "id": "mango",
+          "name": "Mango",
+          "sprite": "/sprites/mango.png"
+        },
+        {
+          "id": "ostrich-egg",
+          "name": "Ostrich Egg",
+          "sprite": "/sprites/ostrich-egg.png"
+        },
+        {
+          "id": "parrot-egg",
+          "name": "Parrot Egg",
+          "sprite": "/sprites/parrot-egg.png"
+        },
+        {
+          "id": "poi",
+          "name": "Poi",
+          "sprite": "/sprites/poi.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "dragon-tooth",
+          "name": "Dragon Tooth",
+          "sprite": "/sprites/dragon-tooth.png"
+        },
+        {
+          "id": "mango-sticky-rice",
+          "name": "Mango Sticky Rice",
+          "sprite": "/sprites/mango-sticky-rice.png"
+        },
+        {
+          "id": "nautilus-shell",
+          "name": "Nautilus Shell",
+          "sprite": "/sprites/nautilus-shell.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "sea-urchin",
+          "name": "Sea Urchin",
+          "sprite": "/sprites/sea-urchin.png"
+        },
+        {
+          "id": "spice-berry",
+          "name": "Spice Berry",
+          "sprite": "/sprites/spice-berry.png"
+        }
+      ]
+    },
+    {
+      "id": "lewis",
+      "name": "Lewis",
+      "portrait": "/portraits/lewis.png",
+      "loved": [
+        {
+          "id": "autumns-bounty",
+          "name": "Autumn's Bounty",
+          "sprite": "/sprites/autumns-bounty.png"
+        },
+        {
+          "id": "glazed-yams",
+          "name": "Glazed Yams",
+          "sprite": "/sprites/glazed-yams.png"
+        },
+        {
+          "id": "green-tea",
+          "name": "Green Tea",
+          "sprite": "/sprites/green-tea.png"
+        },
+        {
+          "id": "hot-pepper",
+          "name": "Hot Pepper",
+          "sprite": "/sprites/hot-pepper.png"
+        },
+        {
+          "id": "vegetable-medley",
+          "name": "Vegetable Medley",
+          "sprite": "/sprites/vegetable-medley.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "blueberry",
+          "name": "Blueberry",
+          "sprite": "/sprites/blueberry.png"
+        },
+        {
+          "id": "cactus-fruit",
+          "name": "Cactus Fruit",
+          "sprite": "/sprites/cactus-fruit.png"
+        },
+        {
+          "id": "coconut",
+          "name": "Coconut",
+          "sprite": "/sprites/coconut.png"
+        }
+      ]
+    },
+    {
+      "id": "linus",
+      "name": "Linus",
+      "portrait": "/portraits/linus.png",
+      "loved": [
+        {
+          "id": "blueberry-tart",
+          "name": "Blueberry Tart",
+          "sprite": "/sprites/blueberry-tart.png"
+        },
+        {
+          "id": "cactus-fruit",
+          "name": "Cactus Fruit",
+          "sprite": "/sprites/cactus-fruit.png"
+        },
+        {
+          "id": "coconut",
+          "name": "Coconut",
+          "sprite": "/sprites/coconut.png"
+        },
+        {
+          "id": "dish-o-the-sea",
+          "name": "Dish O' The Sea",
+          "sprite": "/sprites/dish-o-the-sea.png"
+        },
+        {
+          "id": "the-alleyway-buffet",
+          "name": "The Alleyway Buffet",
+          "sprite": "/sprites/the-alleyway-buffet.png"
+        },
+        {
+          "id": "yam",
+          "name": "Yam",
+          "sprite": "/sprites/yam.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "chanterelle",
+          "name": "Chanterelle",
+          "sprite": "/sprites/chanterelle.png"
+        },
+        {
+          "id": "common-mushroom",
+          "name": "Common Mushroom",
+          "sprite": "/sprites/common-mushroom.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "sprite": "/sprites/dandelion.png"
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "sprite": "/sprites/ginger.png"
+        },
+        {
+          "id": "hazelnut",
+          "name": "Hazelnut",
+          "sprite": "/sprites/hazelnut.png"
+        },
+        {
+          "id": "holly",
+          "name": "Holly",
+          "sprite": "/sprites/holly.png"
+        },
+        {
+          "id": "leek",
+          "name": "Leek",
+          "sprite": "/sprites/leek.png"
+        },
+        {
+          "id": "magma-cap",
+          "name": "Magma Cap",
+          "sprite": "/sprites/magma-cap.png"
+        },
+        {
+          "id": "morel",
+          "name": "Morel",
+          "sprite": "/sprites/morel.png"
+        },
+        {
+          "id": "purple-mushroom",
+          "name": "Purple Mushroom",
+          "sprite": "/sprites/purple-mushroom.png"
+        },
+        {
+          "id": "snow-yam",
+          "name": "Snow Yam",
+          "sprite": "/sprites/snow-yam.png"
+        },
+        {
+          "id": "spring-onion",
+          "name": "Spring Onion",
+          "sprite": "/sprites/spring-onion.png"
+        },
+        {
+          "id": "wild-horseradish",
+          "name": "Wild Horseradish",
+          "sprite": "/sprites/wild-horseradish.png"
+        },
+        {
+          "id": "winter-root",
+          "name": "Winter Root",
+          "sprite": "/sprites/winter-root.png"
+        }
+      ]
+    },
+    {
+      "id": "marnie",
+      "name": "Marnie",
+      "portrait": "/portraits/marnie.png",
+      "loved": [
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "farmers-lunch",
+          "name": "Farmer's Lunch",
+          "sprite": "/sprites/farmers-lunch.png"
+        },
+        {
+          "id": "pink-cake",
+          "name": "Pink Cake",
+          "sprite": "/sprites/pink-cake.png"
+        },
+        {
+          "id": "pumpkin-pie",
+          "name": "Pumpkin Pie",
+          "sprite": "/sprites/pumpkin-pie.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "stardew-valley-almanac",
+          "name": "Stardew Valley Almanac",
+          "sprite": "/sprites/stardew-valley-almanac.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        }
+      ]
+    },
+    {
+      "id": "maru",
+      "name": "Maru",
+      "portrait": "/portraits/maru.png",
+      "loved": [
+        {
+          "id": "battery-pack",
+          "name": "Battery Pack",
+          "sprite": "/sprites/battery-pack.png"
+        },
+        {
+          "id": "cauliflower",
+          "name": "Cauliflower",
+          "sprite": "/sprites/cauliflower.png"
+        },
+        {
+          "id": "cheese-cauliflower",
+          "name": "Cheese Cauliflower",
+          "sprite": "/sprites/cheese-cauliflower.png"
+        },
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "dwarf-gadget",
+          "name": "Dwarf Gadget",
+          "sprite": "/sprites/dwarf-gadget.png"
+        },
+        {
+          "id": "gold-bar",
+          "name": "Gold Bar",
+          "sprite": "/sprites/gold-bar.png"
+        },
+        {
+          "id": "iridium-bar",
+          "name": "Iridium Bar",
+          "sprite": "/sprites/iridium-bar.png"
+        },
+        {
+          "id": "miners-treat",
+          "name": "Miner's Treat",
+          "sprite": "/sprites/miners-treat.png"
+        },
+        {
+          "id": "pepper-poppers",
+          "name": "Pepper Poppers",
+          "sprite": "/sprites/pepper-poppers.png"
+        },
+        {
+          "id": "radioactive-bar",
+          "name": "Radioactive Bar",
+          "sprite": "/sprites/radioactive-bar.png"
+        },
+        {
+          "id": "rhubarb-pie",
+          "name": "Rhubarb Pie",
+          "sprite": "/sprites/rhubarb-pie.png"
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry",
+          "sprite": "/sprites/strawberry.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "chanterelle",
+          "name": "Chanterelle",
+          "sprite": "/sprites/chanterelle.png"
+        },
+        {
+          "id": "copper-bar",
+          "name": "Copper Bar",
+          "sprite": "/sprites/copper-bar.png"
+        },
+        {
+          "id": "iron-bar",
+          "name": "Iron Bar",
+          "sprite": "/sprites/iron-bar.png"
+        },
+        {
+          "id": "magma-cap",
+          "name": "Magma Cap",
+          "sprite": "/sprites/magma-cap.png"
+        },
+        {
+          "id": "morel",
+          "name": "Morel",
+          "sprite": "/sprites/morel.png"
+        },
+        {
+          "id": "oak-resin",
+          "name": "Oak Resin",
+          "sprite": "/sprites/oak-resin.png"
+        },
+        {
+          "id": "pine-tar",
+          "name": "Pine Tar",
+          "sprite": "/sprites/pine-tar.png"
+        },
+        {
+          "id": "purple-mushroom",
+          "name": "Purple Mushroom",
+          "sprite": "/sprites/purple-mushroom.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "radioactive-ore",
+          "name": "Radioactive Ore",
+          "sprite": "/sprites/radioactive-ore.png"
+        }
+      ]
+    },
+    {
+      "id": "pam",
+      "name": "Pam",
+      "portrait": "/portraits/pam.png",
+      "loved": [
+        {
+          "id": "beer",
+          "name": "Beer",
+          "sprite": "/sprites/beer.png"
+        },
+        {
+          "id": "cactus-fruit",
+          "name": "Cactus Fruit",
+          "sprite": "/sprites/cactus-fruit.png"
+        },
+        {
+          "id": "glazed-yams",
+          "name": "Glazed Yams",
+          "sprite": "/sprites/glazed-yams.png"
+        },
+        {
+          "id": "mead",
+          "name": "Mead",
+          "sprite": "/sprites/mead.png"
+        },
+        {
+          "id": "pale-ale",
+          "name": "Pale Ale",
+          "sprite": "/sprites/pale-ale.png"
+        },
+        {
+          "id": "parsnip",
+          "name": "Parsnip",
+          "sprite": "/sprites/parsnip.png"
+        },
+        {
+          "id": "parsnip-soup",
+          "name": "Parsnip Soup",
+          "sprite": "/sprites/parsnip-soup.png"
+        },
+        {
+          "id": "pina-colada",
+          "name": "Piña Colada",
+          "sprite": "/sprites/pina-colada.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        }
+      ]
+    },
+    {
+      "id": "penny",
+      "name": "Penny",
+      "portrait": "/portraits/penny.png",
+      "loved": [
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "emerald",
+          "name": "Emerald",
+          "sprite": "/sprites/emerald.png"
+        },
+        {
+          "id": "melon",
+          "name": "Melon",
+          "sprite": "/sprites/melon.png"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "sprite": "/sprites/poppy.png"
+        },
+        {
+          "id": "poppyseed-muffin",
+          "name": "Poppyseed Muffin",
+          "sprite": "/sprites/poppyseed-muffin.png"
+        },
+        {
+          "id": "red-plate",
+          "name": "Red Plate",
+          "sprite": "/sprites/red-plate.png"
+        },
+        {
+          "id": "roots-platter",
+          "name": "Roots Platter",
+          "sprite": "/sprites/roots-platter.png"
+        },
+        {
+          "id": "sandfish",
+          "name": "Sandfish",
+          "sprite": "/sprites/sandfish.png"
+        },
+        {
+          "id": "tom-kha-soup",
+          "name": "Tom Kha Soup",
+          "sprite": "/sprites/tom-kha-soup.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "sprite": "/sprites/dandelion.png"
+        },
+        {
+          "id": "leek",
+          "name": "Leek",
+          "sprite": "/sprites/leek.png"
+        }
+      ]
+    },
+    {
+      "id": "pierre",
+      "name": "Pierre",
+      "portrait": "/portraits/pierre.png",
+      "loved": [
+        {
+          "id": "fried-calamari",
+          "name": "Fried Calamari",
+          "sprite": "/sprites/fried-calamari.png"
+        },
+        {
+          "id": "price-catalogue",
+          "name": "Price Catalogue",
+          "sprite": "/sprites/price-catalogue.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "sprite": "/sprites/dandelion.png"
+        }
+      ]
+    },
+    {
+      "id": "robin",
+      "name": "Robin",
+      "portrait": "/portraits/robin.png",
+      "loved": [
+        {
+          "id": "goat-cheese",
+          "name": "Goat Cheese",
+          "sprite": "/sprites/goat-cheese.png"
+        },
+        {
+          "id": "peach",
+          "name": "Peach",
+          "sprite": "/sprites/peach.png"
+        },
+        {
+          "id": "spaghetti",
+          "name": "Spaghetti",
+          "sprite": "/sprites/spaghetti.png"
+        },
+        {
+          "id": "woodys-secret",
+          "name": "Woody's Secret",
+          "sprite": "/sprites/woodys-secret.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "hardwood",
+          "name": "Hardwood",
+          "sprite": "/sprites/hardwood.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "woodcutters-weekly",
+          "name": "Woodcutter's Weekly",
+          "sprite": "/sprites/woodcutters-weekly.png"
+        }
+      ]
+    },
+    {
+      "id": "sam",
+      "name": "Sam",
+      "portrait": "/portraits/sam.png",
+      "loved": [
+        {
+          "id": "cactus-fruit",
+          "name": "Cactus Fruit",
+          "sprite": "/sprites/cactus-fruit.png"
+        },
+        {
+          "id": "maple-bar",
+          "name": "Maple Bar",
+          "sprite": "/sprites/maple-bar.png"
+        },
+        {
+          "id": "pizza",
+          "name": "Pizza",
+          "sprite": "/sprites/pizza.png"
+        },
+        {
+          "id": "tigerseye",
+          "name": "Tigerseye",
+          "sprite": "/sprites/tigerseye.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "joja-cola",
+          "name": "Joja Cola",
+          "sprite": "/sprites/joja-cola.png"
+        }
+      ]
+    },
+    {
+      "id": "sandy",
+      "name": "Sandy",
+      "portrait": "/portraits/sandy.png",
+      "loved": [
+        {
+          "id": "crocus",
+          "name": "Crocus",
+          "sprite": "/sprites/crocus.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        },
+        {
+          "id": "mango-sticky-rice",
+          "name": "Mango Sticky Rice",
+          "sprite": "/sprites/mango-sticky-rice.png"
+        },
+        {
+          "id": "sweet-pea",
+          "name": "Sweet Pea",
+          "sprite": "/sprites/sweet-pea.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "goat-milk",
+          "name": "Goat Milk",
+          "sprite": "/sprites/goat-milk.png"
+        },
+        {
+          "id": "large-goat-milk",
+          "name": "Large Goat Milk",
+          "sprite": "/sprites/large-goat-milk.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "wool",
+          "name": "Wool",
+          "sprite": "/sprites/wool.png"
+        }
+      ]
+    },
+    {
+      "id": "sebastian",
+      "name": "Sebastian",
+      "portrait": "/portraits/sebastian.png",
+      "loved": [
+        {
+          "id": "frog-egg",
+          "name": "Frog Egg",
+          "sprite": "/sprites/frog-egg.png"
+        },
+        {
+          "id": "frozen-tear",
+          "name": "Frozen Tear",
+          "sprite": "/sprites/frozen-tear.png"
+        },
+        {
+          "id": "obsidian",
+          "name": "Obsidian",
+          "sprite": "/sprites/obsidian.png"
+        },
+        {
+          "id": "pumpkin-soup",
+          "name": "Pumpkin Soup",
+          "sprite": "/sprites/pumpkin-soup.png"
+        },
+        {
+          "id": "sashimi",
+          "name": "Sashimi",
+          "sprite": "/sprites/sashimi.png"
+        },
+        {
+          "id": "void-egg",
+          "name": "Void Egg",
+          "sprite": "/sprites/void-egg.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "combat-quarterly",
+          "name": "Combat Quarterly",
+          "sprite": "/sprites/combat-quarterly.png"
+        },
+        {
+          "id": "flounder",
+          "name": "Flounder",
+          "sprite": "/sprites/flounder.png"
+        },
+        {
+          "id": "monster-compendium",
+          "name": "Monster Compendium",
+          "sprite": "/sprites/monster-compendium.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        }
+      ]
+    },
+    {
+      "id": "shane",
+      "name": "Shane",
+      "portrait": "/portraits/shane.png",
+      "loved": [
+        {
+          "id": "beer",
+          "name": "Beer",
+          "sprite": "/sprites/beer.png"
+        },
+        {
+          "id": "hot-pepper",
+          "name": "Hot Pepper",
+          "sprite": "/sprites/hot-pepper.png"
+        },
+        {
+          "id": "pepper-poppers",
+          "name": "Pepper Poppers",
+          "sprite": "/sprites/pepper-poppers.png"
+        },
+        {
+          "id": "pizza",
+          "name": "Pizza",
+          "sprite": "/sprites/pizza.png"
+        }
+      ],
+      "liked": []
+    },
+    {
+      "id": "vincent",
+      "name": "Vincent",
+      "portrait": "/portraits/vincent.png",
+      "loved": [
+        {
+          "id": "cranberry-candy",
+          "name": "Cranberry Candy",
+          "sprite": "/sprites/cranberry-candy.png"
+        },
+        {
+          "id": "frog-egg",
+          "name": "Frog Egg",
+          "sprite": "/sprites/frog-egg.png"
+        },
+        {
+          "id": "ginger-ale",
+          "name": "Ginger Ale",
+          "sprite": "/sprites/ginger-ale.png"
+        },
+        {
+          "id": "grape",
+          "name": "Grape",
+          "sprite": "/sprites/grape.png"
+        },
+        {
+          "id": "pink-cake",
+          "name": "Pink Cake",
+          "sprite": "/sprites/pink-cake.png"
+        },
+        {
+          "id": "snail",
+          "name": "Snail",
+          "sprite": "/sprites/snail.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "coconut",
+          "name": "Coconut",
+          "sprite": "/sprites/coconut.png"
+        },
+        {
+          "id": "daffodil",
+          "name": "Daffodil",
+          "sprite": "/sprites/daffodil.png"
+        }
+      ]
+    },
+    {
+      "id": "willy",
+      "name": "Willy",
+      "portrait": "/portraits/willy.png",
+      "loved": [
+        {
+          "id": "catfish",
+          "name": "Catfish",
+          "sprite": "/sprites/catfish.png"
+        },
+        {
+          "id": "diamond",
+          "name": "Diamond",
+          "sprite": "/sprites/diamond.png"
+        },
+        {
+          "id": "gold-bar",
+          "name": "Gold Bar",
+          "sprite": "/sprites/gold-bar.png"
+        },
+        {
+          "id": "iridium-bar",
+          "name": "Iridium Bar",
+          "sprite": "/sprites/iridium-bar.png"
+        },
+        {
+          "id": "jewels-of-the-sea",
+          "name": "Jewels Of The Sea",
+          "sprite": "/sprites/jewels-of-the-sea.png"
+        },
+        {
+          "id": "mead",
+          "name": "Mead",
+          "sprite": "/sprites/mead.png"
+        },
+        {
+          "id": "octopus",
+          "name": "Octopus",
+          "sprite": "/sprites/octopus.png"
+        },
+        {
+          "id": "pumpkin",
+          "name": "Pumpkin",
+          "sprite": "/sprites/pumpkin.png"
+        },
+        {
+          "id": "sea-cucumber",
+          "name": "Sea Cucumber",
+          "sprite": "/sprites/sea-cucumber.png"
+        },
+        {
+          "id": "sturgeon",
+          "name": "Sturgeon",
+          "sprite": "/sprites/sturgeon.png"
+        },
+        {
+          "id": "the-art-o-crabbing",
+          "name": "The Art O' Crabbing",
+          "sprite": "/sprites/the-art-o-crabbing.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "bait-and-bobber",
+          "name": "Bait And Bobber",
+          "sprite": "/sprites/bait-and-bobber.png"
+        },
+        {
+          "id": "baked-fish",
+          "name": "Baked Fish",
+          "sprite": "/sprites/baked-fish.png"
+        },
+        {
+          "id": "carp-surprise",
+          "name": "Carp Surprise",
+          "sprite": "/sprites/carp-surprise.png"
+        },
+        {
+          "id": "chowder",
+          "name": "Chowder",
+          "sprite": "/sprites/chowder.png"
+        },
+        {
+          "id": "crab-cakes",
+          "name": "Crab Cakes",
+          "sprite": "/sprites/crab-cakes.png"
+        },
+        {
+          "id": "crispy-bass",
+          "name": "Crispy Bass",
+          "sprite": "/sprites/crispy-bass.png"
+        },
+        {
+          "id": "escargot",
+          "name": "Escargot",
+          "sprite": "/sprites/escargot.png"
+        },
+        {
+          "id": "fish-stew",
+          "name": "Fish Stew",
+          "sprite": "/sprites/fish-stew.png"
+        },
+        {
+          "id": "fish-taco",
+          "name": "Fish Taco",
+          "sprite": "/sprites/fish-taco.png"
+        },
+        {
+          "id": "fried-calamari",
+          "name": "Fried Calamari",
+          "sprite": "/sprites/fried-calamari.png"
+        },
+        {
+          "id": "fried-eel",
+          "name": "Fried Eel",
+          "sprite": "/sprites/fried-eel.png"
+        },
+        {
+          "id": "lingcod",
+          "name": "Lingcod",
+          "sprite": "/sprites/lingcod.png"
+        },
+        {
+          "id": "lobster-bisque",
+          "name": "Lobster Bisque",
+          "sprite": "/sprites/lobster-bisque.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        },
+        {
+          "id": "salmon-dinner",
+          "name": "Salmon Dinner",
+          "sprite": "/sprites/salmon-dinner.png"
+        },
+        {
+          "id": "seafoam-pudding",
+          "name": "Seafoam Pudding",
+          "sprite": "/sprites/seafoam-pudding.png"
+        },
+        {
+          "id": "tiger-trout",
+          "name": "Tiger Trout",
+          "sprite": "/sprites/tiger-trout.png"
+        },
+        {
+          "id": "trout-soup",
+          "name": "Trout Soup",
+          "sprite": "/sprites/trout-soup.png"
+        }
+      ]
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "portrait": "/portraits/wizard.png",
+      "loved": [
+        {
+          "id": "book-of-mysteries",
+          "name": "Book of Mysteries",
+          "sprite": "/sprites/book-of-mysteries.png"
+        },
+        {
+          "id": "purple-mushroom",
+          "name": "Purple Mushroom",
+          "sprite": "/sprites/purple-mushroom.png"
+        },
+        {
+          "id": "solar-essence",
+          "name": "Solar Essence",
+          "sprite": "/sprites/solar-essence.png"
+        },
+        {
+          "id": "super-cucumber",
+          "name": "Super Cucumber",
+          "sprite": "/sprites/super-cucumber.png"
+        },
+        {
+          "id": "void-essence",
+          "name": "Void Essence",
+          "sprite": "/sprites/void-essence.png"
+        }
+      ],
+      "liked": [
+        {
+          "id": "iridium-bar",
+          "name": "Iridium Bar",
+          "sprite": "/sprites/iridium-bar.png"
+        },
+        {
+          "id": "quartz",
+          "name": "Quartz",
+          "sprite": "/sprites/quartz.png"
+        }
+      ]
+    }
+  ]
+}

@@ -63,7 +63,30 @@ export const DatasetSchema = z.object({
   rooms: z.array(RoomSchema).min(1),
 });
 
+export const GiftItemSchema = z.object({
+  id: slug,
+  name: z.string().min(1),
+  sprite: z.string().startsWith("/sprites/"),
+});
+
+export const VillagerSchema = z.object({
+  id: slug,
+  name: z.string().min(1),
+  portrait: z.string().startsWith("/portraits/"),
+  loved: z.array(GiftItemSchema),
+  liked: z.array(GiftItemSchema),
+});
+
+export const VillagersDatasetSchema = z.object({
+  version: z.number().int().positive(),
+  game: z.string().min(1),
+  villagers: z.array(VillagerSchema).min(1),
+});
+
 export type BundleItem = z.infer<typeof BundleItemSchema>;
+export type GiftItem = z.infer<typeof GiftItemSchema>;
+export type Villager = z.infer<typeof VillagerSchema>;
+export type VillagersDataset = z.infer<typeof VillagersDatasetSchema>;
 export type Bundle = z.infer<typeof BundleSchema>;
 export type Room = z.infer<typeof RoomSchema>;
 export type Dataset = z.infer<typeof DatasetSchema>;

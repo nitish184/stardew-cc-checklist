@@ -14,14 +14,12 @@ import {
   type ItemFilter,
 } from "@/lib/filters";
 import { useBoard } from "@/lib/useBoard";
-import { useDisplayName } from "@/lib/useDisplayName";
 import { itemTags } from "@/lib/tags";
 import type { BoardState } from "@/lib/board";
 import { SEASONS, type Bundle, type BundleItem, type Room, type Season, type Source } from "@/lib/schema";
 
-export function Checklist({ rooms }: { rooms: Room[] }) {
+export function Checklist({ rooms, name }: { rooms: Room[]; name: string }) {
   const { checked, attribution, toggle, ready } = useBoard(rooms);
-  const { name, setName, hydrated: nameReady } = useDisplayName();
   const [filter, setFilter] = useState<ItemFilter>(emptyFilter);
   const [availNow, setAvailNow] = useState(false);
   const [curSeason, setCurSeason] = useState<Season>("spring");
@@ -41,8 +39,6 @@ export function Checklist({ rooms }: { rooms: Room[] }) {
 
   return (
     <div>
-      <NameBar name={name} setName={setName} ready={nameReady} />
-
       <div className="overall">
         <ProgressBar
           label="Community Center"
@@ -128,6 +124,7 @@ export function Checklist({ rooms }: { rooms: Room[] }) {
             </label>
           </>
         )}
+        <ResetButton />
       </div>
 
       <div className="rooms">
@@ -322,72 +319,6 @@ function ItemInfo({ item }: { item: BundleItem }) {
           </ul>
         </div>
       )}
-    </div>
-  );
-}
-
-function NameBar({
-  name,
-  setName,
-  ready,
-}: {
-  name: string;
-  setName: (n: string) => void;
-  ready: boolean;
-}) {
-  const [draft, setDraft] = useState("");
-  const [editing, setEditing] = useState(false);
-  const hasName = name.trim() !== "";
-
-  if (!ready) return <div className="namebar namebar--muted">Loading board…</div>;
-
-  if (!hasName || editing) {
-    return (
-      <div className="namebar">
-        <label className="namebar__label" htmlFor="displayname">
-          Pick a display name to tick items
-        </label>
-        <div className="namebar__row">
-          <input
-            id="displayname"
-            className="control control--search"
-            value={draft}
-            autoFocus
-            onChange={(e) => setDraft(e.target.value)}
-            placeholder="Your name…"
-          />
-          <button
-            className="btn"
-            type="button"
-            disabled={draft.trim() === ""}
-            onClick={() => {
-              setName(draft);
-              setEditing(false);
-            }}
-          >
-            Save
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="namebar">
-      <span className="namebar__who">
-        Ticking as <strong>{name}</strong>
-      </span>
-      <button
-        className="btn btn--ghost"
-        type="button"
-        onClick={() => {
-          setDraft(name);
-          setEditing(true);
-        }}
-      >
-        Change
-      </button>
-      <ResetButton />
     </div>
   );
 }
