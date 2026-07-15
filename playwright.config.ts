@@ -24,6 +24,14 @@ export default defineConfig({
     // by `next dev` and falls back to .env.local, so tests instead inject the
     // matching gate cookie (see tests/e2e/gate.ts) to render the checklist —
     // without ever knowing or touching the production passphrase.
-    env: { BOARD_PASSPHRASE: GATE_PASSPHRASE },
+    // Dummy Supabase config so the browser client constructs without throwing
+    // (CI has no .env.local). All Supabase traffic is stubbed in tests/e2e/stub.ts,
+    // so these values are never actually used — they just keep createClient happy
+    // and make local runs hermetic (real process env wins over .env.local).
+    env: {
+      BOARD_PASSPHRASE: GATE_PASSPHRASE,
+      NEXT_PUBLIC_SUPABASE_URL: "https://stub.supabase.co",
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: "stub-anon-key",
+    },
   },
 });
